@@ -2133,3 +2133,120 @@ h6 {
     height: 120px;
   }
 }
+/* ---------- Safe Place Section ---------- */
+.safe-place-section {
+  padding: 40px 0;
+  background: var(--white);
+}
+
+.safe-place-card {
+  position: relative;
+  background: var(--white);
+  border-radius: 40px;
+  padding: 80px 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid var(--gray-100);
+}
+
+.safe-place-decor-left {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 200px;
+  height: 350px;
+  background: var(--primary-blue);
+  border-radius: 200px 200px 0 200px;
+  transform: translateY(-50%) rotate(-10deg);
+  opacity: 0.95;
+  z-index: 1;
+}
+
+.safe-place-decor-right {
+  position: absolute;
+  top: -40px;
+  right: 15%;
+  width: 80px;
+  height: 120px;
+  background: var(--primary-blue);
+  border-radius: 100px 0 100px 100px;
+  transform: rotate(20deg);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.safe-place-card::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: var(--accent-yellow);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.safe-place-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.safe-place-title {
+  font-size: 2.4rem;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.safe-place-line {
+  width: 400px;
+  height: 2px;
+  background: var(--accent-yellow);
+  margin: 0 auto 25px;
+}
+
+.safe-place-desc {
+  font-size: 1.1rem;
+  color: var(--primary-blue-light);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.safe-place-chat-bubble {
+  position: absolute;
+  bottom: 80px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  background: var(--accent-yellow-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .safe-place-card {
+    padding: 60px 20px;
+  }
+  .safe-place-title {
+    font-size: 1.8rem;
+  }
+  .safe-place-line {
+    width: 200px;
+  }
+  .safe-place-decor-left, .safe-place-decor-right, .safe-place-card::after {
+    display: none;
+  }
+  .safe-place-chat-bubble {
+    position: static;
+    margin: 30px auto 0;
+  }
+}
