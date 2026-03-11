@@ -1,0 +1,98 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/nav') %>
+
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="/">Homepage</a><span>|</span><span>Pendaftaran</span>
+                </div>
+                <h1>Pendaftaran Siswa Baru</h1>
+                <p>Bergabunglah dengan keluarga besar Edelweiss Learning Center. Isi formulir di bawah untuk memulai
+                    proses pendaftaran.</p>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div>
+                        <h2 style="margin-bottom: 24px;">Formulir Pendaftaran</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="childName">Nama Lengkap Anak</label>
+                                <input type="text" id="childName" placeholder="Masukkan nama lengkap anak">
+                            </div>
+                            <div class="form-group">
+                                <label for="childDob">Tanggal Lahir</label>
+                                <input type="date" id="childDob">
+                            </div>
+                            <div class="form-group">
+                                <label for="program">Program yang Diminati</label>
+                                <select id="program">
+                                    <option value="">Pilih program...</option>
+                                    <option value="playgroup">Playgroup</option>
+                                    <option value="kindergarten">Kindergarten</option>
+                                    <option value="primary">Primary</option>
+                                    <option value="english-course">English Course</option>
+                                    <option value="playetracy">Playetracy</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="parentName">Nama Orang Tua / Wali</label>
+                                <input type="text" id="parentName" placeholder="Masukkan nama orang tua/wali">
+                            </div>
+                            <div class="form-group">
+                                <label for="parentPhone">No. Telepon</label>
+                                <input type="tel" id="parentPhone" placeholder="Contoh: 081234567890">
+                            </div>
+                            <div class="form-group">
+                                <label for="parentEmail">Email</label>
+                                <input type="email" id="parentEmail" placeholder="contoh@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Pesan Tambahan</label>
+                                <textarea id="message" placeholder="Tulis pesan atau pertanyaan Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                Kirim Pendaftaran <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <h2 style="margin-bottom: 24px;">Informasi Pendaftaran</h2>
+                        <div class="contact-info-cards">
+                            <div class="contact-info-card">
+                                <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                                <div>
+                                    <h4>Periode Pendaftaran</h4>
+                                    <p>Pendaftaran dibuka sepanjang tahun. Hubungi kami untuk ketersediaan kuota.</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="icon"><i class="fas fa-file-alt"></i></div>
+                                <div>
+                                    <h4>Dokumen yang Diperlukan</h4>
+                                    <p>Akta kelahiran, Kartu Keluarga, Pas foto 3x4, dan raport terakhir (jika ada).</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="icon"><i class="fas fa-tasks"></i></div>
+                                <div>
+                                    <h4>Proses Seleksi</h4>
+                                    <p>Observasi anak, wawancara orang tua, dan tes penempatan untuk English Course.</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Butuh Bantuan?</h4>
+                                    <p>Hubungi kami di (021) 7884-5678 atau WhatsApp untuk informasi lebih lanjut.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('../partials/footer') %>

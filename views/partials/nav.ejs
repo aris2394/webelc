@@ -1,0 +1,75 @@
+<!-- Navigation -->
+<header class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="/" class="nav-logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                <circle cx="20" cy="20" r="8" fill="#F5C242" />
+                <g stroke="#F5C242" stroke-width="2.5" fill="none">
+                    <line x1="20" y1="2" x2="20" y2="10" />
+                    <line x1="20" y1="30" x2="20" y2="38" />
+                    <line x1="2" y1="20" x2="10" y2="20" />
+                    <line x1="30" y1="20" x2="38" y2="20" />
+                    <line x1="7" y1="7" x2="13" y2="13" />
+                    <line x1="27" y1="27" x2="33" y2="33" />
+                    <line x1="33" y1="7" x2="27" y2="13" />
+                    <line x1="13" y1="27" x2="7" y2="33" />
+                </g>
+            </svg>
+            <div class="logo-text">
+                <span class="logo-title">EDELWEISS</span>
+                <span class="logo-subtitle">LEARNING CENTER</span>
+            </div>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/" class="nav-link <%= page === 'beranda' ? 'active' : '' %>">Beranda</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link <%= page === 'tentang' ? 'active' : '' %>">Tentang Kami <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/about/seputar">Seputar ELC</a></li>
+                        <li><a href="/about/visi-misi">Visi & Misi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="#" class="nav-link <%= page === 'program' ? 'active' : '' %>">Program <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/program/english-course">English Course</a></li>
+                        <li><a href="/program/playetracy">Playetracy</a></li>
+                        <li><a href="/program/ipdc">IPDC</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/kurikulum" class="nav-link <%= page === 'kurikulum' ? 'active' : '' %>">Kurikulum</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kontak" class="nav-link <%= page === 'kontak' ? 'active' : '' %>">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/artikel" class="nav-link <%= page === 'artikel' ? 'active' : '' %>">Artikel</a>
+                </li>
+            </ul>
+            <button class="nav-search" id="searchToggle" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Search overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <form class="search-form">
+                <input type="text" placeholder="Cari..." class="search-input" id="searchInput">
+                <button type="button" class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+            </form>
+        </div>
+    </div>
+</header>

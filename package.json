@@ -1,0 +1,23 @@
+{
+  "name": "elc-website",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build_scripts/generate.js"
+  },
+  "keywords": [
+    "edelweiss",
+    "learning",
+    "center",
+    "education"
+  ],
+  "author": "Edelweiss Learning Center",
+  "license": "ISC",
+  "description": "Website resmi Edelweiss Learning Center",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
