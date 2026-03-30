@@ -35,11 +35,11 @@ jobs:
       - name: Upload to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: elc-baru
+          apiToken: cfut_oRJCs9UzK3ezFmxQiogc7EHsZ2HY88EfXkhb7s5B5e24e15c
+          accountId: d8416a427e68e27b0c75e37a202fe17a
+          projectName: elc-website-blv
           directory: out
-          productionBranch: main
+          branch: main
 
   notify:
     runs-on: ubuntu-latest
