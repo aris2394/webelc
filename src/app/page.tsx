@@ -43,7 +43,7 @@ export default function Home() {
             Program Unggulan Kami
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 w-full max-w-screen-xl rounded-[69px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] bg-white overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 w-full max-w-screen-xl rounded-3xl lg:rounded-[69px] shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] bg-white overflow-hidden">
             
             {/* Elite Academia */}
             <div className="group relative w-full h-[469px] overflow-hidden">
@@ -129,8 +129,8 @@ export default function Home() {
               <p className="text-[#293C88] text-xl font-semibold tracking-wide">
                 Keunggulan Kami
               </p>
-              <h2 className="text-[#293C88] text-5xl lg:text-7xl font-bold leading-tight uppercase font-poppins">
-                <span className="block mb-2 text-6xl lg:text-7xl">why Choose</span>
+              <h2 className="text-[#293C88] text-4xl md:text-5xl lg:text-7xl font-bold leading-tight uppercase font-poppins">
+                <span className="block mb-2 md:text-6xl lg:text-7xl">why Choose</span>
                 <span className="block font-semibold pb-1">edelweiss</span>
                 <span className="block text-[#4357B6]">Learning Center</span>
               </h2>
@@ -139,16 +139,16 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Right Photos (Staggered Layout) */}
-            <div className="relative h-[650px] w-full flex items-center justify-center lg:justify-end">
+            {/* Right Photos (Mobile friendly, overlapping on md) */}
+            <div className="relative h-auto md:h-[650px] w-full flex flex-col md:block items-center justify-center lg:justify-end mt-4 md:mt-0 pb-8 md:pb-0">
               {/* Photo 1: Higher / Left */}
-              <div className="absolute top-0 right-[40%] md:right-1/2 z-10 hover:z-30 transition-all duration-300">
-                <img src="/Rectangle76.png" className="w-[180px] md:w-[229px] h-[360px] md:h-[462px] object-cover shadow-2xl rounded-lg" alt="Student learning" />
+              <div className="md:absolute top-0 right-[40%] md:right-1/2 z-10 hover:z-30 transition-all duration-300">
+                <img src="/Rectangle76.png" className="w-[85%] max-w-[280px] md:max-w-none md:w-[229px] h-[340px] md:h-[462px] object-cover shadow-2xl rounded-lg mx-auto md:mx-0" alt="Student learning" />
               </div>
               
               {/* Photo 2: Lower / Right */}
-              <div className="absolute top-24 right-0 md:right-12 z-20 hover:z-30 transition-all duration-300">
-                <img src="/Rectangle75.png" className="w-[180px] md:w-[229px] h-[360px] md:h-[462px] object-cover shadow-2xl rounded-lg border-[6px] border-[#FFF4BA]" alt="Student happy" />
+              <div className="md:absolute top-24 right-0 md:right-12 z-20 hover:z-30 transition-all duration-300 -mt-20 md:mt-0">
+                <img src="/Rectangle75.png" className="w-[85%] max-w-[280px] md:max-w-none md:w-[229px] h-[340px] md:h-[462px] object-cover shadow-2xl rounded-lg border-[6px] border-[#FFF4BA] mx-auto md:mx-0 md:border-[6px]" alt="Student happy" />
               </div>
             </div>
 

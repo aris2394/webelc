@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#293C88] w-full relative">
+    <footer className="bg-[#293C88] w-full relative overflow-hidden">
       {/* Decorative images top-right */}
-      <div className="absolute right-[50px] top-[30px] flex gap-2">
+      <div className="absolute right-[50px] top-[30px] hidden md:flex gap-2">
         <img src="/ElitePng151.png" className="w-[60px] h-[60px] object-contain" alt="" />
         <img src="/ElitePng141.png" className="w-[65px] h-[75px] object-contain" alt="" />
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-8 py-16">
-        <div className="flex flex-wrap justify-between gap-12">
+      <div className="max-w-[1200px] mx-auto px-6 py-12 md:px-8 md:py-16">
+        <div className="flex flex-col lg:flex-row flex-wrap justify-between gap-10 md:gap-12">
           {/* Logo & Info */}
           <div className="flex flex-col gap-6 max-w-[280px]">
             <img src="/ElitePng131.png" className="w-[180px] h-[160px] object-contain" alt="Edelweiss Logo" />
