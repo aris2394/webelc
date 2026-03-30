@@ -22,7 +22,7 @@ export default function Home() {
           {/* Decorative Leaf Blobs */}
           <img src="/ElitePng121.png" className="absolute -left-10 top-0 w-[317px] h-[276px] max-w-none opacity-90 hidden md:block" alt="Leaf Decoration 1" />
           <img src="/ElitePng129.png" className="absolute right-10 top-10 w-[87px] h-[76px] max-w-none hidden md:block" alt="Leaf Decoration 2" />
-          <img src="/ElitePng164.png" className="absolute -right-4 bottom-10 w-[61px] h-11 max-w-none hidden md:block" alt="Leaf Decoration 3" />
+
           
           <div className="max-w-2xl relative z-10 space-y-6">
             <h2 className="text-[#293C88] text-3xl font-bold">
